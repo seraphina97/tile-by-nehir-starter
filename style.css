@@ -47,3 +47,13 @@ img {
    - Combine with Bootstrap utilities like p-3, mb-4, text-center
    - Ask AI: “Add a subtle zoom effect on image hover”
 */
+
+/* Subtle zoom and shadow effect on tile image hover */
+.border-tile {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.border-tile:hover, .border-tile:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(32, 178, 170, 0.18), 0 1.5px 6px rgba(0,0,0,0.10);
+  z-index: 2;
+}
